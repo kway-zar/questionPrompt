@@ -1,16 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
 
-@media only screen and (max-width : 700px) {
+@media only screen and (max-width : 415px) {
     
     html {
-        scale:50%;
+        
+        scale:80%;
+        
     }
+    
     
     .gif{
         transition:1s;
-        scale:50%;
+        scale:70%;
+        transform:translateX(-80px);
         
-
     }
    
 
