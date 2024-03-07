@@ -10,6 +10,10 @@
     
     
     .gif{
+
+        display:block;
+        margin:auto;
+        align-content: center;
         transition:1s;
         scale:25%;
         
@@ -31,11 +35,12 @@ h1 {
     padding-top: 20px;
     text-align: center;
     margin: auto;
+    transition:1.0s;
     
 }
 
 p {
-    
+    font-size: 2rem;
     text-align:center;
     
 }
@@ -62,6 +67,7 @@ button {
 #no{
     transition:0.3s;
 }
+button:hover {cursor:pointer;}
 button:not(:hover) {transition:1s;}
 
 .gif {
