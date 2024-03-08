@@ -12,7 +12,8 @@
         margin-left: auto;
         margin-right: auto;
         width: 50%;
-        scale:200px;
+        scale:50%;
+        margin-bottom:50px;
         
     }
     #strawberry-png {
@@ -102,7 +103,7 @@ button:not(:hover) {transition:1s;}
 
 
 #gif {
-    z-index:20;
+    z-index:9;
     position:sticky;
     margin:auto;
     margin-top:40px;
