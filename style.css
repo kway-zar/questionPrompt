@@ -25,7 +25,12 @@
 
     
 }
-
+@supports (-webkit-touch-callout: none) {
+    #gif {
+        -webkit-transform: scale(.5, .5);
+        transform:scale(.5,.5);
+    }
+}
   
 @keyframes bounce {
     20%{transform:translateY(20px);}
