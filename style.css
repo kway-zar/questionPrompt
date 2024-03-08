@@ -5,6 +5,7 @@
 
         align-content: center;
         overflow:hidden;
+        background-repeat:no-repeat;
     }
     #gif{
 
@@ -26,9 +27,17 @@
     
 }
 @supports (-webkit-touch-callout: none) {
+    html{
+        -webkit-transform: scale(.8,.8);
+        transform:scale(.8,.8);
+    }
+
     #gif {
-        -webkit-transform: scale(.2, .2);
-        transform:scale(.2,.2);
+
+        -webkit-box-align: center;
+        -webkit-transform: scale(.4, .4);
+        transform:scale(.4,.4);
+
     }
 }
   
