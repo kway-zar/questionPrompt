@@ -2,7 +2,7 @@
 
 @media only screen and (width < 415px) {
     
-    .gif{
+    #gif{
 
         display: block;
         margin-left: auto;
@@ -86,7 +86,7 @@ button:hover {cursor:pointer;}
 button:not(:hover) {transition:1s;}
 
 
-.gif {
+#gif {
     position:sticky;
     margin:auto;
     margin-top:40px;

@@ -4,6 +4,8 @@ const YES_BUTTON = document.getElementById('yes');
 const questionElement = document.getElementById('question');
 const AuthorStatement = document.getElementById('AuthorStatement');
 const HTMLelement = document.querySelector('html');
+const gif = document.getElementById('gif');
+const div = document.getElementById('img-container'); 
 
 const QUESTION = ["Are you my pookie!??","WHAT!??", "Still No??","I beg you🥺", "One more NO and I'll-","I'll...shut up now😔"];
 
@@ -12,6 +14,7 @@ var noButtonCounter = 0;
 var yesButtonCounter = 0;
 var w = Math.floor(window.innerWidth);
 var h = Math.floor(window.innerHeight);
+
 
 HTMLelement.style.height = h + "px";
 
@@ -45,8 +48,6 @@ YES_BUTTON.addEventListener("click", ()=> {
     
 });
 
-
-
 function MOVE_NO_BUTTON() {
     
     noButtonCounter++;
@@ -73,6 +74,7 @@ function MOVE_NO_BUTTON() {
         case 2: questionElement.innerHTML = QUESTION[2];
             break;
         case 3: questionElement.innerHTML = QUESTION[3];
+
             break;
         case 4: questionElement.innerHTML = QUESTION[4];
             break;
@@ -82,19 +84,20 @@ function MOVE_NO_BUTTON() {
                 YES_BUTTON.style.animation = "1s ease-in-out 0.3s infinite alternate bounce";
 
             break;
+        case 10:questionElement.innerHTML = "stop wasting ur time🤦🏻‍♂️";
+                AuthorStatement.innerHTML = "JUST HIT THE Y-E-S BUTTON🙄";
+
+                gif.src = "assets/anime-pat.gif";
+
+            break;
         
     }
-    if(noButtonCounter > 10) {
-        questionElement.innerHTML = "stop wasting ur time🤦🏻‍♂️";
-        AuthorStatement.innerHTML = "JUST HIT THE Y-E-S BUTTON🙄";
-    }
-
 }
 
 function ENDSession() {
-    AuthorStatement.style.opacity = "1";
-    const gif = document.querySelector('.gif');
-    gif.outerHTML = '<img src = "assets/jjk-gojo-satoru.gif" class = "gif"></img>';
-    gif.style.width = "30px";
-    AuthorStatement.innerHTML = "OKAY POOKIE😘🥰";
+
+    questionElement.innerHTML = "GUD";
+    AuthorStatement.style.opacity = "1"; 
+    gif.src = "assets/gojo-satoru.gif";      
+    AuthorStatement.innerHTML = "OKAY ";
 }
