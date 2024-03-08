@@ -31,11 +31,11 @@
         transform:scale(.8,.8);
     }
     #gif {
-
+        -webkit-filter:saturate(1);
         -webkit-box-align: center;
         -webkit-transform: scale(.4, .4);
         transform:scale(.4,.4);
-
+        filter:saturate(1);
     }
 }
   
@@ -53,6 +53,7 @@
 
 
 html {
+    filter:saturate(1);
     content:"";
     position:fixed;
     font-family: 'Protest Riot';
