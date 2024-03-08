@@ -10,11 +10,11 @@
     
     .gif{
 
-        display:block;
+        margin-top:0px;
         margin:auto;
         align-content: center;
         transition:1s;
-        scale:20%;
+        transform:scale(2);
         
     }
     
