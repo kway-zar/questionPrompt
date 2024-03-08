@@ -1,13 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
 
-@media only screen and (width < 600px) {
+@media only screen and (width < 414px) {
     
     html {
         
         scale:80%;
         
-    }
-    
+    }  
     
     .gif{
 
@@ -15,19 +14,27 @@
         margin:auto;
         align-content: center;
         transition:1s;
-        scale:25%;
+        scale:20%;
         
     }
-   
+    
 
     
 }
+@keyframes bounce {
+    20%{transform:translateY(20px);}
+    40%{transform:translateY(0px);}
+    60%{transform:translateY(5px);}
+}
+
+
 html {
 
     font-family: 'Protest Riot';
     color: #944E63;
     background-image: linear-gradient(to bottom,#FFE7E7 50%,#CAA6A6);
     overflow:hidden;
+
 }
 
 
@@ -42,6 +49,8 @@ h1 {
 p {
     font-size: 2rem;
     text-align:center;
+    opacity:0;
+    transition:1s;
     
 }
 button {
@@ -58,17 +67,25 @@ button {
 }
 #yes:hover{
     filter:hue-rotate(720deg);
-    
     transform:translateY(-5px);
     background-color: red;
 
-    
 }
+#yes:focus{
+    transition:0.3s;
+    background-color: #541b24;
+}
+#yes:not(:hover){
+
+    background-color:#B47B84;
+}
+
 #no{
     transition:0.3s;
 }
 button:hover {cursor:pointer;}
 button:not(:hover) {transition:1s;}
+
 
 .gif {
     position:sticky;
