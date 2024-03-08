@@ -9,7 +9,7 @@
     }
     #gif{
 
-        display: block;
+        display: fixed;
         margin-left: auto;
         margin-right: auto;
         width: 50%;
@@ -30,8 +30,8 @@
     #gif {
         -webkit-filter:saturate(1);
         -webkit-box-align: center;
-        -webkit-transform: scale(.4, .4);
-        transform:scale(.4,.4);
+        -webkit-transform: scale(.8, .8);
+        transform:scale(.8,.8);
         filter:saturate(1);
     }
 }
@@ -62,7 +62,6 @@ html {
 body{
     z-index: 0;
     filter:saturate(1);
-    content:"";
     position:fixed;
     color: #944E63;
     background-image: linear-gradient(to bottom,#FFE7E7 50%,#CAA6A6);
