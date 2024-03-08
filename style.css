@@ -26,10 +26,7 @@
     
 }
 @supports (-webkit-touch-callout: none) {
-    body{
-        -webkit-transform:scale(.8,.8);
-        transform:scale(.8,.8);
-    }
+
     #gif {
         -webkit-filter:saturate(1);
         -webkit-box-align: center;
@@ -50,19 +47,24 @@
     80% {background-color: #421321;}
     90% {background-color: #B47B84;}
 }
-
-
 html {
+    overflow: hidden;
+    width: 100%;
+    height:100%;
+}
+* {
+    font-family: 'Protest Riot';
+    color: #944E63;
+
+}
+body{
+    z-index: 0;
     filter:saturate(1);
     content:"";
     position:fixed;
-    font-family: 'Protest Riot';
     color: #944E63;
     background-image: linear-gradient(to bottom,#FFE7E7 50%,#CAA6A6);
     background-repeat: none;
-    overflow:hidden;
-    width:100%;
-    height:100%;
 
 }
 

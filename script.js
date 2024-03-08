@@ -98,7 +98,7 @@ function MOVE_NO_BUTTON() {
 }
 
 function ENDSession() {
-
+    noButtonCounter = 11;
     questionElement.innerHTML = "GUD😘🥰";
     AuthorStatement.style.opacity = "1"; 
     gif.src = "assets/gojo-satoru.gif";      
