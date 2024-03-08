@@ -6,6 +6,7 @@ const AuthorStatement = document.getElementById('AuthorStatement');
 const HTMLelement = document.querySelector('html');
 const gif = document.getElementById('gif');
 const div = document.getElementById('img-container'); 
+const strawberry = document.getElementById('strawberry-png');
 
 const QUESTION = ["Are you my pookie!??","WHAT!??", "Still No??","I beg you🥺", "One more NO and I'll-","I'll...shut up now😔"];
 
@@ -16,7 +17,8 @@ var w = Math.floor(window.innerWidth);
 var h = Math.floor(window.innerHeight);
 
 
-HTMLelement.style.height = h + "px";
+HTMLelement.style.height = (h + 50) + "px";
+strawberry.style.width = w + "px";
 
 questionElement.innerHTML = QUESTION[0];
 NO_BUTTON.addEventListener("mouseover",MOVE_NO_BUTTON);
@@ -38,13 +40,13 @@ YES_BUTTON.addEventListener("click", ()=> {
         ENDSession();
     }
     
-    // emailjs.init("TVlNoW4QZZp1T2Y1C");
-    // emailjs.send("service_sruoekf","template_btz2x4p")
-    //     .then(function(response) {
-    //         console.log("SUCCESS",response.status,response.text);
-    //     }, function(error) {
-    //         console.log("FAILED",error);
-    //     });
+    emailjs.init("TVlNoW4QZZp1T2Y1C");
+    emailjs.send("service_sruoekf","template_btz2x4p")
+        .then(function(response) {
+            console.log("SUCCESS",response.status,response.text);
+        }, function(error) {
+            console.log("FAILED",error);
+        });
     
 });
 
@@ -96,8 +98,8 @@ function MOVE_NO_BUTTON() {
 
 function ENDSession() {
 
-    questionElement.innerHTML = "GUD";
+    questionElement.innerHTML = "GUD😘🥰";
     AuthorStatement.style.opacity = "1"; 
     gif.src = "assets/gojo-satoru.gif";      
-    AuthorStatement.innerHTML = "OKAY ";
+    AuthorStatement.innerHTML = "OKAYYYY😇🥳";
 }
