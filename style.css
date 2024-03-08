@@ -44,6 +44,7 @@ html {
     font-family: 'Protest Riot';
     color: #944E63;
     background-image: linear-gradient(to bottom,#FFE7E7 50%,#CAA6A6);
+    background-repeat: none;
     overflow:hidden;
     
 
