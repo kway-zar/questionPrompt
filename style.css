@@ -14,7 +14,6 @@
         margin-right: auto;
         width: 50%;
         scale:50%;
-        margin-bottom:50px;
         
     }
     #strawberry-png {
@@ -27,11 +26,10 @@
     
 }
 @supports (-webkit-touch-callout: none) {
-    html{
-        -webkit-transform: scale(.8,.8);
+    *{
+        -webkit-transform:scale(.8,.8);
         transform:scale(.8,.8);
     }
-
     #gif {
 
         -webkit-box-align: center;
