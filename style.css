@@ -119,9 +119,6 @@ button:not(:hover) {transition:1s;}
 #gif {
     z-index:9;
     position:sticky;
-    margin:auto;
-    margin-top:40px;
-    border-radius: 20px;
     display:flex;
     align-content: center;
 
