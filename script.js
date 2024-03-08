@@ -18,6 +18,7 @@ var h = Math.floor(window.innerHeight);
 
 
 HTMLelement.style.height = (h + 50) + "px";
+HTMLelement.style.width = w + "px";
 strawberry.style.width = w + "px";
 
 questionElement.innerHTML = QUESTION[0];
