@@ -2,13 +2,13 @@
 
 @media only screen and (width < 415px) {
     html {
-        height: 100%;
-        width: 100%;
         align-content: center;
         overflow:hidden;
         background-repeat:no-repeat;
         -webkit-filter:saturate(1);
         filter:saturate(1);
+        -webkit-transform: scale(.5, .5);
+        transform:scale(.5,.5);
     }
     #gif{
 
