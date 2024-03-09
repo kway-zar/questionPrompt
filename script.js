@@ -34,13 +34,11 @@ YES_BUTTON.addEventListener("click", ()=> {
         questionElement.innerHTML = "Are you Sure?";
         
     } else if(noButtonCounter> yesButtonCounter && yesButtonCounter == 1) {
-
         ENDSession();
 
     } else if(yesButtonCounter > 1) {
         ENDSession();
-    }
-    
+    }   
     
 });
 
@@ -58,11 +56,10 @@ function MOVE_NO_BUTTON() {
         
         y = y/2;
     }
-
+    NO_BUTTON.style.transform = "translate(" + x + "px," + y +"px)";
     console.log("x:" + x);
     console.log("y:" + y);
-
-    NO_BUTTON.style.transform = "translate(" + x + "px," + y +"px)";
+   
     switch(noButtonCounter) {
 
         case 1: questionElement.innerHTML = QUESTION[1];

@@ -35,7 +35,7 @@
         -webkit-box-align: center;
         -webkit-transform: scale(.8, .8);
         transform:scale(.4,4);
-        filter:saturate(1);
+        filter:saturate(1.2);
     }
 }
   
@@ -60,7 +60,6 @@ html {
 * {
     font-family: 'Protest Riot';
     color: #944E63;
-    filter:saturate(1.2);
     
 }
 body{
@@ -99,7 +98,6 @@ button {
     font-size: 2rem;
     color:white;
     background-color:#B47B84;
-    transition:1.5s;
 }
 
 #yes:hover{
@@ -117,7 +115,7 @@ button {
 }
 
 #no{
-    transition:0.2s ease-in;
+    transition:0.3s;
 }
 button:hover {cursor:pointer;}
 button:not(:hover) {transition:1s;}
