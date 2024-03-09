@@ -7,8 +7,8 @@
         background-repeat:no-repeat;
         -webkit-filter:saturate(1);
         filter:saturate(1);
-        -webkit-transform: scale(.5, .5);
-        transform:scale(.5,.5);
+        -webkit-transform: scale(.8, .8) !important;
+        transform:scale(.8,.8) !important;
     }
     #gif{
 
@@ -16,8 +16,8 @@
         margin-left: auto;
         margin-right: auto;
         width: 50%;
-        -webkit-transform: scale(.5, .5);
-        transform:scale(.5,.5);
+        -webkit-transform: scale(.5, .5)!important;
+        transform:scale(.5,.5)!important;
         
     }
     #strawberry-png {
@@ -31,17 +31,17 @@
 }
 @supports (-webkit-touch-callout: none) {
     #AuthorStatement,#div-container,.img-container {
-        -webkit-transform: scale(.8,.8);
-        transform:scale(.8,.8);
+        -webkit-transform: scale(.8,.8)!important;
+        transform:scale(.8,.8)!important;
     }
     #gif {
         -webkit-filter:saturate(1);
         margin-left:auto;
         margin-right: auto;
-        justify-content: center;
+        justify-content: center !important;
         align-self:center;
-        -webkit-transform: scale(.6, .6);
-        transform:scale(.6,.6);
+        -webkit-transform: scale(.6, .6)!important;
+        transform:scale(.6,.6)!important;
         filter:saturate(1);
     }
 }
