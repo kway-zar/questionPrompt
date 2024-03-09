@@ -51,6 +51,8 @@
     90% {background-color: #B47B84;}
 }
 html {
+    position: absolute;
+    background-size:cover;
     overflow: hidden;
     text-align: center;
     align-content: center;
@@ -59,7 +61,7 @@ html {
     font-family: 'Protest Riot';
     color: #944E63;
     filter:saturate(1.2);
-
+    
 }
 body{
     z-index: 0;
@@ -89,7 +91,6 @@ p {
 }
 button {
     z-index: 10;
-    font-family: 'Protest Riot';
     border:none;
     width:100px;
     height:50px;
@@ -116,7 +117,7 @@ button {
 }
 
 #no{
-    transition:0.3s;
+    transition:0.2s ease-in;
 }
 button:hover {cursor:pointer;}
 button:not(:hover) {transition:1s;}
