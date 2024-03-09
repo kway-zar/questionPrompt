@@ -137,7 +137,6 @@ button:not(:hover) {transition:1s;}
 
 }
 #div-container {
-    z-index:-1;
     display: flex;
     margin:auto;
     padding:10px;
