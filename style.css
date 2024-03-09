@@ -26,11 +26,12 @@
     
 }
 @supports (-webkit-touch-callout: none) {
-    * {
-        -webkit-transform: scale(.8,.8);
-        transform:scale(.8,.8);
+    html {
+        overflow-y: auto;
     }
+    
     #gif {
+
         -webkit-filter:saturate(1);
         -webkit-box-align: center;
         -webkit-transform: scale(.8, .8);
