@@ -33,9 +33,8 @@
     #gif {
 
         -webkit-filter:saturate(1);
-        -webkit-box-align: center;
         -webkit-transform: scale(.4, .4);
-        transform:scale(.4,4);
+        transform:scale(.4,.4);
         filter:saturate(1.2);
     }
 }
