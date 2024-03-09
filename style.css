@@ -6,13 +6,18 @@
         align-content: center;
         overflow:hidden;
         background-repeat:no-repeat;
+        -webkit-filter:saturate(1);
+        filter:saturate(1);
     }
     #gif{
 
         display: fixed;
         margin-left: auto;
         margin-right: auto;
-        scale:10%;
+        width: 50%;
+        scale:50%;
+        -webkit-transform: scale(.4, .4);
+        transform:scale(.4,.4);
         
     }
     #strawberry-png {
@@ -25,14 +30,16 @@
     
 }
 @supports (-webkit-touch-callout: none) {
-    html {
-        overflow-y:hidden;
-        height:100%;
+    * {
+        -webkit-transform: scale(.8,.8);
+        transform:scale(.8,.8);
     }
-    
     #gif {
-        transform:scale(.1,.1);
-    
+        -webkit-filter:saturate(1);
+        -webkit-box-align: center;
+        -webkit-transform: scale(.4, .4);
+        transform:scale(.4,.4);
+        filter:saturate(1);
     }
 }
   
@@ -48,7 +55,7 @@
     90% {background-color: #B47B84;}
 }
 html {
-    position: absolute;
+    position: fixed;
     background-size:cover;
     overflow: hidden;
     text-align: center;
@@ -57,7 +64,6 @@ html {
 * {
     font-family: 'Protest Riot';
     color: #944E63;
-    
 }
 body{
     z-index: 0;
@@ -95,6 +101,7 @@ button {
     font-size: 2rem;
     color:white;
     background-color:#B47B84;
+    transition:1.5s;
 }
 
 #yes:hover{
@@ -112,7 +119,7 @@ button {
 }
 
 #no{
-    transition:0.3s;
+    transition:0.2s ease-in;
 }
 button:hover {cursor:pointer;}
 button:not(:hover) {transition:1s;}
@@ -131,6 +138,7 @@ button:not(:hover) {transition:1s;}
     z-index:-1;
     display: flex;
     margin:auto;
+    padding:10px;
     align-content: space-between;
     justify-content: space-evenly;
     align-items: center;
