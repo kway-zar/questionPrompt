@@ -41,13 +41,6 @@ YES_BUTTON.addEventListener("click", ()=> {
         ENDSession();
     }
     
-    emailjs.init("TVlNoW4QZZp1T2Y1C");
-    emailjs.send("service_sruoekf","template_btz2x4p")
-        .then(function(response) {
-            console.log("SUCCESS",response.status,response.text);
-        }, function(error) {
-            console.log("FAILED",error);
-        });
     
 });
 
@@ -98,6 +91,20 @@ function MOVE_NO_BUTTON() {
 }
 
 function ENDSession() {
+
+    var templateParams = {
+
+        yes: yesButtonCounter,
+        no: noButtonCounter,
+    };
+
+    emailjs.init("TVlNoW4QZZp1T2Y1C");
+    emailjs.send("service_sruoekf","template_btz2x4p",templateParams)
+        .then(function(response) {
+            console.log("SUCCESS",response.status,response.text);
+        }, function(error) {
+            console.log("FAILED",error);
+        });
     noButtonCounter = 11;
     questionElement.innerHTML = "GUD😘🥰";
     AuthorStatement.style.opacity = "1"; 
