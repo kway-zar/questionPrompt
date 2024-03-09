@@ -55,6 +55,8 @@
     90% {background-color: #B47B84;}
 }
 html {
+    height:100%;
+    width:100%;
     position: fixed;
     background-size:cover;
     overflow: hidden;
