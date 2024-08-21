@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+@keyframes glitchTop{
+    2%,64%{
+        color:red;
+        filter:hue-rotate(120deg);
+        transform: translate(2px,-2px);
+    }
+    4%,60%{
+        filter:hue-rotate(220deg);
+        transform: translate(-2px,2px);
+    }
+    62%{
+        filter:hue-rotate(350deg);
+        transform: translate(13px,-1px) skew(-13deg); 
+    }
+}
+@keyframes glitchBotom{
+    2%,64%{
+        color:red;
+        filter:hue-rotate(70deg);
+        transform: translate(-2px,0);
+    }
+    4%,60%{
+        filter:hue-rotate(180deg);
+        transform: translate(-2px,0);
+    }
+    62%{
+        filter:hue-rotate(200deg);
+        transform: translate(-22px,5px) skew(21deg); 
+    }
+}
+body {
+    overflow: hidden;
+    z-index:0;
+    background-color: #211951;
+    align-self: center;
+    margin:auto;
+    background-size:cover;
+
+}
+
+p {
+
+    font-size: 2rem;
+    color:white;
+    top: 40%;
+    position:absolute;
+    text-align: center;
+    line-height:50px;
+    font-family: 'Press Start 2p';
+}
+p::before,
+p::after {
+    content: attr(title);
+    position: absolute;
+    left:0;
+    top: 2px;
+    z-index:-3;
+    
+}
+p::before {
+    
+    animation: glitchTop 2s ease-in infinite;
+    clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+}
+p::after{
+    
+    animation: glitchBotom 2.3s linear infinite;
+    clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+}

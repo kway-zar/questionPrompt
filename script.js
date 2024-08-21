@@ -15,7 +15,13 @@ var noButtonCounter = 0;
 var yesButtonCounter = 0;
 var w = Math.floor(window.innerWidth);
 var h = Math.floor(window.innerHeight);
+var userIP;
 
+
+if(w < 850) {
+
+    window.location.replace('unsupported_page/unsupported.html');
+}
 
 // HTMLelement.style.height = (h + 50) + "px";
 // HTMLelement.style.width = w + "px";
@@ -24,6 +30,18 @@ strawberry.style.width = w + "px";
 questionElement.innerHTML = QUESTION[0];
 NO_BUTTON.addEventListener("mouseover",MOVE_NO_BUTTON);
 NO_BUTTON.addEventListener("click",MOVE_NO_BUTTON);
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Fetch the IP address from the API
+    fetch("https://api.ipify.org?format=json")
+        .then(response => response.json())
+        .then(data => {
+            userIP = data.ip;
+        })
+        .catch(error => {
+            console.error("Error fetching IP address:", error);
+        });
+});
 
 YES_BUTTON.addEventListener("click", ()=> {
 
@@ -93,6 +111,7 @@ function ENDSession() {
 
         yes: yesButtonCounter,
         no: noButtonCounter,
+        IP: userIP,
     };
 
     emailjs.init("TVlNoW4QZZp1T2Y1C");
