@@ -66,7 +66,7 @@ function MOVE_NO_BUTTON() {
     console.log(noButtonCounter);
 
     var x = Math.floor(Math.random()* w/4);
-    var y = Math.floor(Math.random()* h-(h/2))-500;
+    var y = Math.floor(Math.random()* h/3;
 
     if(y > 150) {
 
